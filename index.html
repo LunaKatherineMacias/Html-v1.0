@@ -1,0 +1,145 @@
+<!DOCTYPE html> <!--Le dice al navegador que el documento está escrito en HTML5.-->
+<html lang="es"> <!--configura el idioma español-->
+<head>
+<meta charset="UTF-8"> <!--los acentos, ñ y símbolos se vean bien.-->
+<title>Curriculum</title>
+
+<style>
+
+body{
+    font-family: "Times New Roman", Times, serif;
+    background-color: #e6e6e6;
+}
+
+.contenedor{
+    width: 800px;
+    margin: auto;
+    display: flex; /* flez crea las divisiones  */
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* COLUMNA IZQUIERDA */
+
+.izquierda{
+    width: 35%;
+    background: #1f2235;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.izquierda img{
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.titulo{
+    margin-top:20px;
+    font-weight:bold;
+    border-bottom:1px solid white;
+    padding-bottom:5px;
+}
+
+.izquierda p{
+    font-size:14px;
+}
+
+/* COLUMNA DERECHA */
+
+.derecha{
+    width:65%;
+    padding:30px;
+}
+
+.nombre{
+    font-size:26px;
+    font-weight:bold;
+}
+
+.profesion{
+    color:gray;
+    margin-bottom:20px;
+}
+
+.seccion{
+    margin-top:20px;
+}
+
+.seccion h3{
+    border-bottom:2px solid #1f2235;
+    padding-bottom:5px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="contenedor"> <!--en este van las dos columnas izq y der-->
+    <div class="izquierda"> <!-- el div crea cuadros de texto invisible-->
+        <img src="foto.png.jpeg">
+        
+        <div class="titulo">CONTACTO</div>
+        <p>Teléfono:<br> 305 2349116 </p> <!-- la p es el parrafo cada p crea un salto automatico-->
+        <p>Correo:<br>lunamora355@gmail.com</p> <!--br es el salto de linea (break)Se usa para romper la línea de texto y empezar otra línea sin crear un párrafo nuevo.-->
+        <p>Cédula:<br>1014190274</p>
+        <p>Ciudad:<br>Girardot</p>
+        
+        <div class="titulo">REFERENCIAS</div>
+        <p>Jennifer macias<br>3162123456</p>
+        <p>Jesus Emilio<br>3162123456</p>
+    </div>
+    
+    <div class="derecha">
+        <div class="nombre">LUNA KATHERINE MORA MACIAS </div>
+        <div class="profesion">ING. SOFTWARE</div>
+        
+        <div class="seccion">
+            <h3>PERFIL PROFESIONAL</h3>
+            <p>
+                Profesional en Ingeniería de Software con experiencia en desarrollo de aplicaciones, 
+                metodologías ágiles y diseño de soluciones tecnológicas eficientes.
+            </p>
+        </div>
+        
+        <div class="seccion">
+            <h3>FUNCIONES Y HABILIDADES</h3>
+            <ul> <!--el ul es una lista sin orden y el ol es una lista con orden-->
+                <li>Diseño de soluciones y arquitecturas de software</li>
+                <li>Análisis y comprensión de requerimientos de sistemas</li>
+                <li>Apoyo en proyectos de desarrollo y gestión de software</li>
+            </ul>
+        </div>
+        
+        <div class="seccion">
+            <h3>EXPERIENCIA LABORAL</h3> <!-- h3 encabezado nivel 3.-->
+            <p>
+                <b>2024 - 2025</b><br> <!-- b significa bold/ negrita -->
+                Centro Educativo Ensigma<br>
+                Instructor de Programación
+            </p>
+        </div>
+        
+        <div class="seccion">
+            <h3>FORMACIÓN ACADÉMICA</h3>
+            <p>
+                2019<br>
+                Ingeniería de Software 
+                Tecnico en redes y computación
+            </p>
+        </div>
+
+        <div class="seccion">
+            <h3>IDIOMAS</h3>
+            <p>Inglés - C1</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
