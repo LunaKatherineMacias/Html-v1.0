@@ -24,6 +24,10 @@
             <option value="pp">Pasaporte</option>
         </select><br><br>
 
+        <!-- Número de documento -->
+        <label>Número de documento:</label>
+        <input type="text" name="num_documento"><br><br>
+
         <!-- Género -->
         <label>Género:</label><br>
 
@@ -83,15 +87,14 @@
         const mensaje = document.getElementById("mensajeExito");
 
         form.addEventListener("submit", function(e) {
-            e.preventDefault(); // Previene recarga
+            e.preventDefault();
             mensaje.style.display = "block";
 
-            // Ocultarlo después de 3 segundos
             setTimeout(() => {
                 mensaje.style.display = "none";
             }, 3000);
 
-            form.reset(); // Limpiar formulario después de enviar
+            form.reset();
         });
     </script>
 
