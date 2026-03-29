@@ -1,96 +1,84 @@
+/* Fuente global */
 body {
     font-family: "Poppins", sans-serif;
-    background: linear-gradient(135deg, #6b73ff, #000dff);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 40px;
+    background: #ffdff4; /* rosa pastel suave */
     margin: 0;
-    color: #333;
+    padding: 0;
+    color: #000; /* letras negras */
 }
 
-/* TÍTULO */
-h2 {
-    color: white;
-    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
-    margin-bottom: 25px;
-    font-size: 28px;
-}
-
-/* FORMULARIO */
-.formulario {
-    background: #ffffffdd;
-    backdrop-filter: blur(5px);
-    padding: 30px 35px;
+/* Caja principal */
+.container {
+    width: 90%;
+    max-width: 450px;
+    background: #fff;
+    padding: 30px;
+    margin: 50px auto;
     border-radius: 15px;
-    width: 350px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-    animation: aparecer 0.7s ease-in-out;
+    box-shadow: 0 0 20px rgba(255, 0, 120, 0.15);
 }
 
-@keyframes aparecer {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-.formulario label {
+/* Título */
+h2 {
+    text-align: center;
     font-weight: 600;
-    margin-top: 15px;
-    display: block;
-    color: #222;
+    margin-bottom: 20px;
+    color: #d63384; /* rosa fuerte */
 }
 
-/* CAMPOS */
-.formulario input[type="text"],
-.formulario input[type="date"],
-.formulario input[type="tel"],
-.formulario input[type="email"],
-.formulario textarea {
+/* Labels */
+label {
+    font-size: 15px;
+    display: block;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+/* Inputs y selects */
+input, select, textarea {
     width: 100%;
     padding: 10px;
     margin-top: 6px;
-    border-radius: 8px;
-    border: 1px solid #aaa;
-    font-size: 14px;
-    transition: 0.3s;
-}
-
-/* EFECTO AL ESCRIBIR */
-.formulario input:focus,
-.formulario textarea:focus {
-    border-color: #4a54ff;
-    box-shadow: 0 0 8px #4a54ff80;
-    outline: none;
-}
-
-/* INTERESES */
-.intereses {
-    margin-top: 8px;
-}
-
-.intereses label {
-    display: block;
-    font-weight: 500;
-    margin-top: 5px;
-}
-
-/* BOTÓN */
-.btn {
-    width: 100%;
-    padding: 12px;
-    background: #000dff;
-    background: linear-gradient(135deg, #4a54ff, #0016ff);
-    color: white;
-    border: none;
     border-radius: 10px;
-    font-size: 16px;
+    border: 2px solid #ff9dd9;
+    font-size: 14px;
+    background: #ffe6f4;
+    color: #000;
+}
+
+/* Para select multiple */
+select[multiple] {
+    height: 90px;
+}
+
+/* Botones */
+.botones {
+    display: flex;
+    justify-content: space-between;
     margin-top: 20px;
+}
+
+.btn {
+    background: #ff8ac2;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 12px;
     cursor: pointer;
-    transition: 0.3s;
+    color: #000;
+    font-weight: 600;
+    width: 48%;
+    transition: 0.2s;
 }
 
 .btn:hover {
-    transform: scale(1.03);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    background: #ff6eb6;
+}
+
+/* Botón limpiar */
+.limpiar {
+    background: #ffc6e6;
+}
+
+.limpiar:hover {
+    background: #ffb3df;
 }
