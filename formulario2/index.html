@@ -14,6 +14,7 @@
 
     <form id="formulario">
 
+        <!-- Tipo de documento -->
         <label>Tipo de documento:</label><br>
         <select name="documento">
             <option value="">Seleccione...</option>
@@ -23,6 +24,21 @@
             <option value="pp">Pasaporte</option>
         </select><br><br>
 
+        <!-- Género -->
+        <label>Género:</label><br>
+
+        <div class="genero-container">
+            <input type="radio" id="femenino" name="genero" value="femenino">
+            <label for="femenino" class="genero-opcion">Femenino</label>
+
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino" class="genero-opcion">Masculino</label>
+
+            <input type="radio" id="otro" name="genero" value="otro">
+            <label for="otro" class="genero-opcion">Otro</label>
+        </div><br>
+
+        <!-- Datos -->
         <label>Nombre:</label>
         <input type="text" name="nombre"><br><br>
 
@@ -38,20 +54,46 @@
         <label>Correo electrónico:</label>
         <input type="email" name="correo"><br><br>
 
+        <!-- Intereses -->
         <label>Intereses:</label><br>
         <input type="checkbox" name="interes"> Informática<br>
         <input type="checkbox" name="interes"> Música<br>
         <input type="checkbox" name="interes"> Arte<br><br>
 
+        <!-- Experiencia -->
         <label>Experiencia:</label>
         <textarea name="experiencia"></textarea><br><br>
 
+        <!-- Botones -->
         <div class="botones">
             <input type="submit" value="Enviar">
             <button type="reset">Limpiar</button>
         </div>
 
     </form>
+
+    <!-- Mensaje de éxito -->
+    <div id="mensajeExito" class="mensaje-exito">
+        ✨ ¡Formulario enviado con éxito! ✨
+    </div>
+
+    <!-- Script para mostrar el mensaje -->
+    <script>
+        const form = document.getElementById("formulario");
+        const mensaje = document.getElementById("mensajeExito");
+
+        form.addEventListener("submit", function(e) {
+            e.preventDefault(); // Previene recarga
+            mensaje.style.display = "block";
+
+            // Ocultarlo después de 3 segundos
+            setTimeout(() => {
+                mensaje.style.display = "none";
+            }, 3000);
+
+            form.reset(); // Limpiar formulario después de enviar
+        });
+    </script>
 
 </body>
 </html>
