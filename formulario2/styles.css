@@ -1,7 +1,7 @@
 /* Fuente global */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #fbd6e3; /* Rosa pastel */
+    background-color: #fbd6e3; /* rosa pastel */
     text-align: center;
     margin: 0;
     padding: 20px;
@@ -21,7 +21,10 @@ form {
     box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 
-/* Inputs */
+/* ----------------------------- */
+/* Inputs + bordes amarillo pollito */
+/* ----------------------------- */
+
 input[type="text"],
 input[type="tel"],
 input[type="email"],
@@ -30,11 +33,20 @@ select,
 textarea {
     width: 260px;
     padding: 8px;
-    border: 1px solid #e9b3c6;
+    border: 2px solid #e9b3c6;
     background-color: #f7cddb; /* rosa palo */
     border-radius: 6px;
     font-size: 14px;
     outline: none;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Efecto focus amarillo pollito */
+input:focus,
+select:focus,
+textarea:focus {
+    border: 2px solid #ffe978; /* amarillo pollito */
+    box-shadow: 0 0 6px #ffe97888;
 }
 
 textarea {
@@ -42,7 +54,10 @@ textarea {
     resize: none;
 }
 
-/* Botones */
+/* ----------------------------- */
+/* Botones con hover lindo */
+/* ----------------------------- */
+
 input[type="submit"],
 button[type="reset"] {
     padding: 10px 20px;
@@ -50,6 +65,7 @@ button[type="reset"] {
     border-radius: 6px;
     cursor: pointer;
     font-weight: 600;
+    transition: transform 0.2s ease, opacity 0.2s ease, box-shadow 0.2s ease;
 }
 
 input[type="submit"] {
@@ -60,7 +76,69 @@ button[type="reset"] {
     background-color: #f5adc7;
 }
 
+/* Hover cute */
 input[type="submit"]:hover,
 button[type="reset"]:hover {
-    opacity: 0.8;
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgba(0,0,0,0.15);
+    opacity: 0.9;
+}
+
+/* ----------------------------- */
+/* Género (botones tipo toggle) */
+/* ----------------------------- */
+
+.genero-container {
+    margin: 10px 0;
+}
+
+.genero-opcion {
+    display: inline-block;
+    padding: 8px 14px;
+    margin: 5px;
+    background-color: #f7cddb;
+    border: 2px solid #e9b3c6;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease, border 0.2s ease;
+}
+
+.genero-opcion:hover {
+    background-color: #ffb8d6;
+    transform: scale(1.05);
+}
+
+/* Estado seleccionado */
+input[type="radio"]:checked + label.genero-opcion {
+    background-color: #ff9ac4;
+    border-color: #ff9ac4;
+    color: white;
+    transform: scale(1.08);
+}
+
+/* Ocultar radios */
+input[type="radio"] {
+    display: none;
+}
+
+/* ----------------------------- */
+/* Mensaje de éxito */
+/* ----------------------------- */
+
+.mensaje-exito {
+    display: none;
+    margin-top: 20px;
+    background-color: #fff7c2;
+    padding: 15px 20px;
+    border-left: 5px solid #ffe978;
+    border-radius: 6px;
+    font-weight: 600;
+    color: #7a6600;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    animation: aparecer 0.4s ease;
+}
+
+@keyframes aparecer {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
 }
