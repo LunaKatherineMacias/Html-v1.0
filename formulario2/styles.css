@@ -1,0 +1,66 @@
+/* Fuente global */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fbd6e3; /* Rosa pastel */
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Formulario */
+form {
+    display: inline-block;
+    text-align: left;
+    background: white;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* Inputs */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    width: 260px;
+    padding: 8px;
+    border: 1px solid #e9b3c6;
+    background-color: #f7cddb; /* rosa palo */
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+/* Botones */
+input[type="submit"],
+button[type="reset"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+input[type="submit"] {
+    background-color: #ff9ac4;
+}
+
+button[type="reset"] {
+    background-color: #f5adc7;
+}
+
+input[type="submit"]:hover,
+button[type="reset"]:hover {
+    opacity: 0.8;
+}
