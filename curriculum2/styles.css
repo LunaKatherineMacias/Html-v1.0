@@ -1,0 +1,71 @@
+body{
+    font-family: "Times New Roman", Times, serif;
+    background-color: #e6e6e6;
+    margin: 0;
+    padding: 20px;
+}
+
+.contenedor{
+    width: 800px;
+    margin: auto;
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* COLUMNA IZQUIERDA */
+.izquierda{
+    width: 35%;
+    background: #1f2235;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.izquierda img{
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.titulo{
+    margin-top: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+}
+
+.izquierda p{
+    font-size: 14px;
+}
+
+/* COLUMNA DERECHA */
+.derecha{
+    width: 65%;
+    padding: 30px;
+}
+
+.nombre{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.profesion{
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.seccion{
+    margin-top: 20px;
+}
+
+.seccion h3{
+    border-bottom: 2px solid #1f2235;
+    padding-bottom: 5px;
+}
+
+/* LISTAS */
+ul{
+    margin-left: 20px;
+}
