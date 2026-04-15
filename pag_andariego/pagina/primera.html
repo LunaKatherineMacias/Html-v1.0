@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andariego - Turismo en Girardot</title>
+
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- ICONOS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">🌍 Andariego</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="mostrarMensaje()">Cultura</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="mostrarMensaje()">Hoteles</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="mostrarMensaje()">Restaurantes</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- MENSAJE -->
+<div id="mensaje" class="text-center mt-3"></div>
+
+<!-- CARRUSEL -->
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
+
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+  </div>
+
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="../img/carrusel1.jpg" class="d-block w-100">
+      <div class="carousel-caption">
+        <h2>Descubre Girardot</h2>
+        <p>La app que te guía a los mejores planes</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="../img/carrusel2.jpg" class="d-block w-100">
+      <div class="carousel-caption">
+        <h2>Hoteles increíbles</h2>
+        <p>Descansa en los mejores lugares</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="../img/carrusel3.jpg" class="d-block w-100">
+      <div class="carousel-caption">
+        <h2>Gastronomía única</h2>
+        <p>Descubre sabores inolvidables</p>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
+
+<!-- SOBRE LA APP -->
+<section class="container mt-5 text-center">
+  <h2 class="mb-4">📱 ¿Qué es Andariego?</h2>
+  <p class="mb-5">
+    Andariego es la app que te ayuda a descubrir los mejores lugares de Girardot:
+    cultura, gastronomía y hospedaje en un solo lugar.
+  </p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="feature-box">
+        <i class="bi bi-geo-alt-fill icono"></i>
+        <h5>Lugares únicos</h5>
+        <p>Descubre sitios turísticos recomendados.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="feature-box">
+        <i class="bi bi-cup-hot-fill icono"></i>
+        <h5>Mejor comida</h5>
+        <p>Encuentra los mejores restaurantes.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="feature-box">
+        <i class="bi bi-building icono"></i>
+        <h5>Hoteles top</h5>
+        <p>Hospedaje cómodo y seguro.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CARDS -->
+<div class="container mt-5">
+  <div class="row justify-content-center">
+
+    <div class="col-md-4">
+      <div class="card">
+        <img src="../img/imagen1.avif" class="card-img-top">
+        <div class="card-body">
+          <h5>📍 Cultura</h5>
+          <p>Explora los mejores lugares culturales de Girardot.</p>
+          <p>⭐⭐⭐⭐☆</p>
+          <a href="#" onclick="mostrarMensaje()" class="btn btn-primary">Explorar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img src="../img/imagen2.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5>🏨 Hoteles</h5>
+          <p>Hospedaje cómodo y descanso garantizado.</p>
+          <p>⭐⭐⭐⭐⭐</p>
+          <a href="#" onclick="mostrarMensaje()" class="btn btn-primary">Ver opciones</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <img src="../img/imagen3.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5>🍴 Restaurantes</h5>
+          <p>Disfruta los mejores sabores de Girardot.</p>
+          <p>⭐⭐⭐⭐☆</p>
+          <a href="#" onclick="mostrarMensaje()" class="btn btn-primary">Descubrir</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- CONOCENOS -->
+<section class="container mt-5 text-center">
+  <h2 class="mb-4">👥 Conócenos</h2>
+
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <div class="card team-card p-3">
+        <h5>Miguel Rios</h5>
+        <p>Desarrollador</p>
+        <p>📧 miguel@email.com</p>
+        <p>📱 3084597866</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card team-card p-3">
+        <h5>Luna Mora</h5>
+        <p>Diseñadora</p>
+        <p>📧 lelerolerole@email.com</p>
+        <p>📱 3052349116</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta text-center">
+  <h2>¿Listo para explorar Girardot?</h2>
+  <p>Descubre todo con Andariego</p>
+  <button class="btn btn-light mt-3">🚀 Próximamente</button>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center p-3">
+  <p>© 2026 Andariego - Turismo en Girardot</p>
+</footer>
+
+<script>
+function mostrarMensaje() {
+  document.getElementById("mensaje").innerHTML =
+    "<div class='alert alert-success'>🚀 Próximamente</div>";
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
